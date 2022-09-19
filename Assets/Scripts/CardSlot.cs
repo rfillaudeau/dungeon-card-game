@@ -1,11 +1,10 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class CardSlot : MonoBehaviour
 {
-    public static Action<CardSlot> onSelected;
+    public static event Action<CardSlot> onSelected;
 
     public Card card;
     public Vector2Int gridPosition;
